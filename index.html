@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <div class="">
+      <br>
+      <h3>IP Address Tracker</h3>
+      <br>
+      <form>
+        <input type="text" name="" id="search">
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+      </form>
+    </div>    
+  </div>
+  <div class="grid">
+    <div class="details-network">
+      <div class="grid-content">
+        <strong>Ip Address</strong>
+        <h4 class="ip-add"></h4>
+      </div>
+      <div class="grid-content">
+        <strong>Location</strong>
+        <h4 class="location"></h4>
+      </div>
+      <div class="grid-content">
+        <strong>time-zone</strong>
+        <h4 class="time"></h4>
+      </div>
+      <div class="grid-content">
+        <strong>isp</strong>
+        <h4 class="isp"></h4>
+      </div>  
+    </div>
+  </div>
+  <div id="mapid"></div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</body>
+</html>
